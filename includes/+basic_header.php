@@ -10,7 +10,7 @@
 
 		<!-- Bootstrap -->
 		<link href="/assets/css/app.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="/core/webDev.css">
+		<link rel="stylesheet" type="text/css" href="/core/css/webDev.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,5 +24,6 @@
 	</head>
 
 	<body id=<?php strtolower($page_title); echo '"'.$page_title.'"'; ?>>
+		<div class="mother">
 
 		<?php include_once(__DIR__."/+nav_links.php"); ?>

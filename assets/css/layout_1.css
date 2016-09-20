@@ -1,0 +1,160 @@
+#layout-1.main-page-container {
+  background-color: darkslategrey;
+  width: 80%;
+  margin: auto;
+}
+#layout-1.main-page-container .trickery {
+  width: inherit;
+  margin-bottom: 50px;
+  position: relative;
+}
+#layout-1.main-page-container #admin-container {
+  min-height: 50px;
+  background-color: indianred;
+  position: fixed;
+  width: inherit;
+  clear: both;
+  margin-top: -50px;
+}
+#layout-1.main-page-container #admin-container #admin-title {
+  float: left;
+  width: 20%;
+  min-height: inherit;
+  background-color: mediumvioletred;
+}
+#layout-1.main-page-container #admin-container #admin-title h2 {
+  vertical-align: middle;
+  padding: 15px;
+  margin: 0;
+  min-height: inherit;
+  color: black;
+}
+#layout-1.main-page-container #admin-container #admin-options {
+  float: left;
+  width: 80%;
+  min-height: inherit;
+  background-color: red;
+}
+#layout-1.main-page-container #admin-container #admin-options ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 10px;
+  float: right;
+}
+#layout-1.main-page-container #admin-container #admin-options ul li {
+  float: left;
+}
+#layout-1.main-page-container #admin-container #admin-options ul li button {
+  margin: 0 20px;
+}
+#layout-1.main-page-container #region-container {
+  min-height: 700px;
+  background-color: darkgrey;
+  padding: 20px;
+}
+#layout-1.main-page-container #region-container #header-region {
+  background-color: grey;
+  min-height: 100px;
+}
+#layout-1.main-page-container #region-container #header-region .main-header .logo-image {
+  min-height: 50px;
+  float: left;
+  width: 20%;
+  font-size: 25px;
+  padding: 5px;
+}
+#layout-1.main-page-container #region-container #header-region .main-header .main-nav {
+  min-height: 50px;
+  float: right;
+  width: 80%;
+  text-align: right;
+}
+#layout-1.main-page-container #region-container #header-region .main-header .main-nav ul {
+  list-style: none;
+  float: right;
+  padding: 10px 10px 0 0;
+}
+#layout-1.main-page-container #region-container #header-region .main-header .main-nav ul li {
+  float: left;
+  margin-left: 5px;
+}
+#layout-1.main-page-container #region-container #header-region .sub-header {
+  background-color: mediumaquamarine;
+  min-height: 50px;
+  float: left;
+  width: 100%;
+}
+#layout-1.main-page-container #region-container #header-region .sub-header .sub-nav {
+  margin: 15px;
+}
+#layout-1.main-page-container #region-container #slideshow {
+  background-color: lightgray;
+  min-height: 300px;
+}
+#layout-1.main-page-container #region-container #slideshow .title h2 {
+  padding: 40px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+#layout-1.main-page-container #region-container #slideshow .description {
+  margin: 0 100px;
+}
+#layout-1.main-page-container #region-container #main-content-container {
+  min-height: 800px;
+}
+#layout-1.main-page-container #region-container #main-content-container #side-menu-container {
+  width: 30%;
+  float: left;
+  background-color: darkkhaki;
+  min-height: inherit;
+}
+#layout-1.main-page-container #region-container #main-content-container #side-menu-container .feature-block {
+  margin: 30px;
+  background-color: dodgerblue;
+}
+#layout-1.main-page-container #region-container #main-content-container #side-menu-container .feature-block .title {
+  background-color: darkslateblue;
+  color: white;
+}
+#layout-1.main-page-container #region-container #main-content-container #side-menu-container .feature-block .data {
+  text-align: center;
+  color: white;
+}
+#layout-1.main-page-container #region-container #main-content-container #side-menu-container .feature-block .data ul {
+  list-style: none;
+}
+#layout-1.main-page-container #region-container #main-content-container #content-container {
+  width: 70%;
+  float: left;
+  background-color: darkviolet;
+  min-height: inherit;
+}
+#layout-1.main-page-container #region-container #main-content-container #content-container .content-node {
+  background-color: lightgoldenrodyellow;
+  margin: 20px;
+}
+#layout-1.main-page-container #region-container #main-content-container #content-container .content-node .title h3 {
+  font-size: 30px;
+}
+#layout-1.main-page-container #region-container #footer-container {
+  min-height: 200px;
+  background-color: darkslategrey;
+  clear: both;
+}
+#layout-1.main-page-container #region-container #footer-container .footer-block {
+  float: left;
+  width: 20%;
+  margin: 2.5%;
+  color: teal;
+  border: 1px solid black;
+}
+#layout-1.main-page-container #region-container #footer-container .footer-block h4 {
+  margin-bottom: 5px;
+}
+#layout-1 .sometext {
+  background-color: lightskyblue;
+}
+#layout-1 .admin-text {
+  display: none;
+}

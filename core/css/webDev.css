@@ -1,0 +1,243 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2016, 9:54:22 PM
+    Author     : intern
+*/
+/*
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	TAGS
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+body {
+  margin: 0;
+  padding: 0;
+}
+body,
+td,
+pre,
+input,
+textarea,
+select {
+  font-family: "Lucida Grande", Lucida, "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+a:link {
+  color: #0069B4;
+  font-weight: bold;
+}
+a:visited {
+  color: #0069B4;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: none;
+  color: #0069B4;
+  font-weight: bold;
+}
+a:active {
+  color: #0069B4;
+  font-weight: bold;
+}
+a img {
+  border: 0 none;
+}
+code {
+  color: #f09;
+}
+p,
+li,
+pre {
+  line-height: 1.4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre {
+  margin-top: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+pre {
+  margin-bottom: 1.5em;
+}
+h1 {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #002D72;
+  margin: 0 0 1em 0;
+}
+h2 {
+  font-family: "Lucida Grande", Lucida, "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+  color: #009292;
+  font-size: 15px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #05478e;
+  margin: 0 0 18px 0;
+}
+ul {
+  list-style-type: square;
+  margin-left: 0;
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 6px;
+}
+li ol,
+li ul {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+th {
+  text-align: left;
+}
+object,
+embed {
+  margin: 0;
+  padding: 0;
+}
+/*
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	MAIN DIVISIONS
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        Filtering
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#filter_choices li.selected a {
+  border-color: purple;
+  border-style: double;
+}
+#filter_display_objects li {
+  display: none;
+}
+#filter_display_objects li.selected {
+  display: block;
+  background-color: lightblue;
+}
+body {
+  background-color: #04577b;
+}
+.mother {
+  width: 1170px;
+  margin: 0 auto;
+  background-color: lightcyan;
+}
+#main-menu {
+  height: 55px;
+  margin: 50px 0 35px 0;
+  padding: 20px 0 20px;
+}
+#main-menu h2 {
+  font-size: 40px;
+  float: left;
+  width: 35%;
+  text-align: center;
+}
+#main-menu h2 a:visited,
+#main-menu h2 a:link,
+#main-menu h2 a:focus,
+#main-menu h2 a:hover {
+  text-decoration: none;
+}
+#main-menu ul {
+  float: right;
+  margin: 15px 0 0 0;
+  padding: 0 20px 0 0;
+}
+#main-menu ul li {
+  float: left;
+  list-style: none;
+  background-color: deepskyblue;
+  padding: 3px 7px;
+  margin: 0 2px;
+  border: 1px black solid;
+}
+#main-menu ul li:selected {
+  background-color: dodgerblue;
+}
+.topic-menu {
+  width: 100%;
+}
+.topic-menu .topic-title {
+  float: right;
+  width: 59.5%;
+  border: 4px #004b81 solid;
+  color: #0069b4;
+  margin-right: 20px;
+  height: 80px;
+  background-color: aqua;
+  text-align: center;
+  font-size: 60px;
+  line-height: 75px;
+}
+.topic-menu .topics-list {
+  width: 35%;
+  margin-left: 20px;
+  list-style: none;
+  border: 4px #004b81 solid;
+  padding: 0;
+  background-color: gainsboro;
+}
+.topic-menu .topics-list li {
+  background-color: #0069b4;
+  margin: 15px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+}
+.topic-menu .topics-list li a:visited,
+.topic-menu .topics-list li a:link,
+.topic-menu .topics-list li a:focus,
+.topic-menu .topics-list li a:hover {
+  text-decoration: none;
+  color: white;
+}
+#footer {
+  clear: both;
+  width: 100%;
+  height: 100px;
+  font-size: 11px;
+  border-top: 3px solid #B5BECA;
+  color: #6b6b6b;
+  background-color: #D6DAE1;
+}
+#footer h2 {
+  font-family: "Lucida Grande", Lucida, "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+  color: #444;
+  font-size: 14px;
+  font-weight: bold;
+}
+#footer a,
+#footer a:link,
+#footer a:visited,
+#footer a:active,
+#footer a:hover {
+  font-weight: normal;
+}

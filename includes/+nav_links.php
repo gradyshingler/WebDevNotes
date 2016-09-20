@@ -1,8 +1,5 @@
-<nav id='main_menu'>
-    <h2>Site Navigation</h2>
-
-    <a href="/index.php">&lt;&lt;HOME</a>
-    <br /><br />
+<nav id='main-menu'>
+    <h2><a href="/index.php">Developer Notes</a></h2>
 
     <ul>
         <li><a href="/HTML_notes">HTML</a></li>
