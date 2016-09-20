@@ -1,0 +1,84 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic|Roboto:400,400italic,500,500italic,700,700italic);
+@import 'font-awesome/font-awesome';
+
+// Color Setup
+@blue:                      #007eb5;
+@dark-blue:                 #04577b;
+
+@green:                     #6cb921;
+
+@brown:                     #8a6d3b;
+@dark-brown:                #674e24;
+
+@silver:                    #c7c7c7;
+
+@light-grey:                #7c7c7c;
+@grey:                      #454545;
+@dark-grey:                 #383838;
+
+@white:                     #ffffff;
+@black:                     #000000;
+
+@default-font-family:       'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+@default-font-size:         14px;
+@default-font-weight:       normal;
+@default-line-height:       18px;
+@default-font-color:        #585858;
+
+@alt-font-family:           'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Extra small screen / phone
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+
+// Small screen / tablet
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+
+// Medium screen / desktop
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+
+// Large screen / wide desktop
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+@import '../bootstrap/less/mixins';
+
+// Block Elements
+@import 'blocks/header';
+@import 'blocks/body';
+@import 'blocks/footer';
+
+
+// Modules Elements
+@import 'modules/navigation';
+@import 'modules/content';
+
+
+// UI Elements
+@import 'ui/buttons';
+
+
+
+body {
+    font-family: @default-font-family;
+    font-size: @default-font-size;
+    font-weight: @default-font-weight;
+    line-height: @default-line-height;
+    color: @default-font-color;
+    background-color: @dark-grey;
+    
+    .mother {
+        background-color: @white;
+    }
+}
+
+

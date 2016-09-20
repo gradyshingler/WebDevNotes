@@ -1,0 +1,180 @@
+#layout-1 {
+    &.main-page-container {
+        background-color: darkslategrey;
+        width: 80%;
+        margin: auto;
+        .trickery {
+            width: inherit;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        #admin-container {
+            min-height: 50px;
+            background-color: indianred;
+            position: fixed;
+            width: inherit;
+            clear: both;
+            margin-top: -50px;
+            #admin-title {
+                float: left;
+                width: 20%;
+                min-height: inherit;
+                background-color: mediumvioletred;
+                h2 {
+                    vertical-align: middle;
+                    padding: 15px;
+                    margin: 0;
+                    min-height: inherit;
+                    color: black;
+                }
+            }
+
+            #admin-options {
+                float: left;
+                width: 80%;
+                min-height: inherit;
+                background-color: red;
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding-top: 10px;
+                    float: right;
+                    li {
+                        float: left;
+                        button {
+                            margin: 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #region-container {
+            min-height: 700px;
+            background-color: darkgrey;
+            padding: 20px;
+            #header-region {
+                background-color: grey;
+                min-height: 100px;
+                .main-header {
+                    .logo-image {
+                        min-height: 50px;
+                        float: left;
+                        width: 20%;
+                        font-size: 25px;
+                        padding: 5px;
+                    }
+                    .main-nav {
+                        min-height: 50px;
+                        float: right;
+                        width: 80%;
+                        text-align: right;
+                        ul {
+                            list-style: none;
+                            float: right;
+                            padding: 10px 10px 0 0;
+                            li {
+                                float: left;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+                .sub-header {
+                    background-color: mediumaquamarine;
+                    min-height: 50px;
+                    float: left;
+                    width: 100%;
+                    .sub-nav {
+                        margin: 15px;
+                    }
+                }
+            }
+
+            #slideshow {
+                background-color: lightgray;
+                min-height: 300px;
+                .title {
+                    h2 {
+                        padding: 40px;
+                        font-size: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                    }
+                }
+
+                .description {
+                    margin: 0 100px;
+                }
+            }
+
+            #main-content-container {
+                min-height: 800px;
+                #side-menu-container {
+                    width: 30%;
+                    float: left;
+                    background-color: darkkhaki;
+                    min-height: inherit;
+                    .feature-block {
+                        margin: 30px;
+                        background-color: dodgerblue;
+                        .title {
+                            background-color: darkslateblue;
+                            color: white;
+                        }
+                        .data {
+                            text-align: center;
+                            color: white;
+                            ul {
+                                list-style: none;
+                            }
+                        }
+                    }
+
+                }
+                #content-container {
+                    width: 70%;
+                    float: left;
+                    background-color: darkviolet;
+                    min-height: inherit;
+                    .content-node {
+                        background-color: lightgoldenrodyellow;
+                        margin: 20px;
+                        .title {
+                            h3 {
+                                font-size: 30px;
+                            }
+                        }
+                        .data {
+                            p {
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            #footer-container {
+                min-height: 200px;
+                background-color: darkslategrey;
+                clear: both;
+                .footer-block {
+                    float: left;
+                    width: 20%;
+                    margin:2.5%;
+                    color: teal;
+                    border: 1px solid black;
+                    h4 {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .sometext {
+        background-color: lightskyblue;
+    }
+    .admin-text {
+        display: none;
+    }
+}

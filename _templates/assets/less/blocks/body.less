@@ -1,0 +1,124 @@
+
+.body {
+    padding-top: 88px;
+
+    &.home-body {
+        
+        .jumbotron {
+            position: relative;
+            height: 375px;
+            background-image: url('https://placeimg.com/1920/1080/tech');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+
+            .jumbrotron-background {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 75%;
+                #gradient.horizontal(@black; rgba(0,0,0,0); 40%; 100%);
+            }
+            & > .container {
+                padding-top: 50px;
+            }
+        }
+        .call-to-action {
+            font-size: @default-font-size + 4;
+            text-align: center;
+        }
+        .logo-container {
+            margin-top: 24px;
+            margin-bottom: 48px;
+            
+            img {
+                margin-bottom: 16px;
+            }
+        }
+        .feature {
+            margin-top: 64px;
+            text-align: center;
+        }
+        .carousel {
+            background-color: darken(@white, 5%);
+            margin: 64px 0 32px;
+            
+            .carousel-control {
+                color: @brown;
+                width: 5%;
+                
+                &:hover,
+                &:focus {
+                    color: @brown;
+                }
+                &.left,
+                &.right {
+                    background-image: none;
+                }
+            }
+            .carousel-indicators {
+                
+                .active {
+                    background: @brown;
+                }
+                li {
+                    border: 1px solid #ccc;
+                }
+            }
+            .text-brand{
+                color: @brown;
+            }
+            .no-margin{
+                margin: 0;
+            }
+            .item {
+                padding: 15px 40px;
+                background: none;
+            }
+            .media-object {
+                margin: auto;
+            }
+        }
+    }
+    &.interior-body {
+    
+        .breadcrumb {
+            margin: 16px 0;
+            background: none;
+        }
+        .page-content {
+            
+            &.featured-page {
+                
+                .row {
+                    padding: 48px 32px;
+
+                    &:first-of-type {
+                        padding-top: 16px;
+                    }
+                } 
+            }
+            .row {
+                
+                &:last-of-type {
+                        
+                    &.call-to-action {
+                        margin-bottom: 8px;
+                    }
+                }
+                &.highlighted {
+                    padding: 48px 32px;
+                    background-color: darken(@white, 5%);
+                }
+                &.centered {
+                    text-align: center;
+                }                
+                &.call-to-action {
+                    margin: 48px 0 0;
+                    padding: 48px 32px;
+                }
+            }
+        }
+    }
+}

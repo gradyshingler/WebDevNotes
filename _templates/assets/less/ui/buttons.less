@@ -1,0 +1,40 @@
+
+.jumbotron,
+.feature,
+.interior-body {
+
+    .btn {
+        color: @white;
+        text-transform: uppercase;
+        background-color: @green;
+        border-color: darken(@green, 5%);
+        
+        &:hover,
+        &:focus {
+            color: @white;
+            background-color: darken(@green, 5%);
+            border-color: darken(@green, 10%);
+        }
+        &:active {
+            color: @white;
+            background-color: darken(@green, 10%);
+            border-color: darken(@green, 15%);
+        }
+    }
+}
+.interior-body {
+    
+    .btn {
+        margin-top: 16px;
+        
+        @media (max-width: @screen-sm-max) { 
+        
+            & {
+                display: block;
+                margin: 16px auto 0;
+                max-width: 350px;
+                white-space: initial;
+            }
+        } 
+    }
+}

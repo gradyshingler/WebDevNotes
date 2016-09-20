@@ -1,0 +1,89 @@
+
+@default-height:        80px;
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: @dark-grey;
+    border-bottom: 8px solid @blue;
+    border-radius: 0;
+    
+    .navbar-header {
+        height: @default-height;
+        
+        .navbar-brand {
+            margin: 0;
+            padding: @default-height / 4;
+            height: auto;
+            max-height: @default-height;
+
+            img {
+                height: @default-height / 2;
+                width: auto;
+            }
+        }
+    }
+    .navbar-nav {
+        
+        li {
+            
+            & + li {
+                margin-left: 2px;
+            }
+            &.active {
+                
+                a {
+                    background-color: @blue;
+                }
+            }
+            a {
+                margin: 0;
+                padding: 0 (@default-height / 4);
+                font-family: @alt-font-family;
+                font-size: @default-font-size - 2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: @white;
+                background-color: @grey;
+                min-height: @default-height;
+                line-height: @default-height;
+                
+                &:hover,
+                &:focus {
+                    background-color: @blue;
+                }
+                &:active {
+                    background-color: @dark-blue;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) { 
+    
+    .navbar-toggle {
+        margin: 23px 15px 23px 0;
+    }
+    .navbar-collapse {
+        float: none !important;
+        
+        .navbar-nav {
+            margin: 2px -15px;
+            
+            & > li {
+                margin-bottom: 2px;
+
+                & + li {
+                    margin-left: 0;
+                }
+                & > a {
+                    min-height: 32px;
+                    line-height: 32px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+} 
