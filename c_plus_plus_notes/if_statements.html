@@ -53,35 +53,41 @@
             <li></li>
             <li></li>
             <li></li>
-        </ul>Good Try
+        </ul>
 
         <div class="main-content">
 
-            <h2><Overview</h2>
-            <p>C++ is an interesting language... blah blah blah... </p>
+            <h2>If Statements</h2>
 
-            <p>Here is a general layout of your C++ file</p>
-
-            <script type="text/syntaxhighlighter" class="brush: js"><![CDATA[
-                  #include <iostream>
-
-                  using namespace std;
-
-                  //Prototypes goes here like:
-                  void function printSomething();
-
-                  //Global Vars goes here: (You don't know these yet)
-
-                  int main() {
-                    ... Main Code Goes Here
+            <p>A general if statement is structured as follows</p>
+            <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
+                  if ( expression ) {
+                    ... do something;
                   }
-
-                  //Other functions go here like:
-                  void function printSomething() {
-                    ... Code Logic to print something
-                  }
-
             ]]></script>
+
+            <p>We can add an else statement like this</p>
+            <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
+                  if ( expression ) {
+                    ... do something;
+                  } else ( expression ) {
+                    .. do something else;
+                  }
+            ]]></script>
+
+            <p>We can also chain an else statement with multiple ifs and else ifs like this: </p>
+            <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
+                  if ( expression ) {
+                    ... do something;
+                  } else if( expression ) {
+                    ... do something else;
+                  } else if( expression ) {
+                    ... do something else;
+                  } else {
+                    ... if all else fails do this;
+                  }
+            ]]></script>
+
         </div>
         <div id="footer">
             &nbsp;
