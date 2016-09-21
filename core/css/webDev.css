@@ -181,12 +181,9 @@ body {
 #main-menu ul li:selected {
   background-color: dodgerblue;
 }
-.topic-menu {
-  width: 100%;
-}
-.topic-menu .topic-title {
+.topic-title {
   float: right;
-  width: 59.5%;
+  width: 700px;
   border: 4px #004b81 solid;
   color: #0069b4;
   margin-right: 20px;
@@ -196,15 +193,16 @@ body {
   font-size: 60px;
   line-height: 75px;
 }
-.topic-menu .topics-list {
-  width: 35%;
-  margin-left: 20px;
+.topics-list {
+  width: 410px;
+  margin: 0 20px;
   list-style: none;
   border: 4px #004b81 solid;
   padding: 0;
   background-color: gainsboro;
+  float: left;
 }
-.topic-menu .topics-list li {
+.topics-list li {
   background-color: #0069b4;
   margin: 15px;
   height: 50px;
@@ -212,12 +210,17 @@ body {
   font-size: 30px;
   line-height: 50px;
 }
-.topic-menu .topics-list li a:visited,
-.topic-menu .topics-list li a:link,
-.topic-menu .topics-list li a:focus,
-.topic-menu .topics-list li a:hover {
+.topics-list li a:visited,
+.topics-list li a:link,
+.topics-list li a:focus,
+.topics-list li a:hover {
   text-decoration: none;
   color: white;
+}
+.main-content {
+  float: right;
+  width: 700px;
+  margin: 10px 20px 0 0;
 }
 #footer {
   clear: both;

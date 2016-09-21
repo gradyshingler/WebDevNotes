@@ -1,4 +1,4 @@
-<nav class="topic-menu">
+
     <h2 class="topic-title"><a href="/HTML_notes/index.php">HTML</a></h2>
 
     <ul class="topics-list">
@@ -10,4 +10,3 @@
         <li></li>
         <li></li>
     </ul>
-</nav>

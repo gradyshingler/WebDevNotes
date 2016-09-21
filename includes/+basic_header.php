@@ -11,6 +11,7 @@
 		<!-- Bootstrap -->
 		<link href="/assets/css/app.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="/core/css/webDev.css">
+		<link rel="stylesheet" type="text/css" href="/core/css/theme.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,6 +20,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<script src="/core/webDev.js"></script>
+		<script src="/core/js/syntaxhighlighter.js"></script>
 		<script src="/core/jquery-1.12.0.js"></script>
 		<script src="/core/jquery.js"></script>
 	</head>

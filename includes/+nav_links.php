@@ -9,7 +9,7 @@
         <li><a href="/MySql_notes">MySql</a></li>
         <li><a href="/JS_notes">JavaScript</a></li>
         <li><a href="/Drupal_notes">Drupal</a></li>
-        <li><a href="/General_Design_notes">General Design</a></li>
+        <li><a href="/c_plus_plus_notes">C++</a></li>
         <li><a href="/Quick_Layouts">Quick Layouts</a></li>
         <li><a href="/Project_Euler">Project Euler</a></li>
     </ul>
