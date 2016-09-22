@@ -57,40 +57,32 @@
 
         <div class="main-content">
 
-            <h2>If Statements</h2>
+            <h2>For Loops</h2>
 
-            <p>A general if statement is structured as follows</p>
+            <p>So For Loops can be extremely useful and can help clarify what our code is doing once we get the hange of them</p>
+            <p>It is interesting to note that any loop done with a while loop can be done with a for loop and vice versa. For loops provide a slightly more elegant way in most cases though</p>
+
             <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
-                  if ( expression ) {
-                    //... do something;
-                  }
+                //For loops take on this form:
+                for( [instantiation]; [Expression]; [Incrementation] ) {
+                    //Input code to be looped.
+                }
             ]]></script>
 
-            <p>We can add an else statement like this</p>
+            <p>So an example would be</p>
             <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
-                  if ( expression ) {
-                    //... do something;
-                  } else ( expression ) {
-                    //.. do something else;
-                  }
-            ]]></script>
+                int total = 0;
 
-            <p>We can also chain an else statement with multiple ifs and else ifs like this: </p>
-            <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
-                  if ( expression ) {
-                    //... do something;
-                  } else if( expression ) {
-                    //... do something else;
-                  } else if( expression ) {
-                    //... do something else;
-                  } else {
-                    //... if all else fails do this;
-                  }
+                for( int i=0; i<10; i++) {
+                    total += i;
+                }
+
+                cout<<total<<endl; //Would output the sum of all values between 0 and 9;
             ]]></script>
 
         </div>
         <div id="footer">
-
+            &nbsp;
         </div><!-- End #footer -->
 
         <script>console.log("Footer is showing")</script>

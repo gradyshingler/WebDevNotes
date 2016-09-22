@@ -192,15 +192,17 @@ body {
   text-align: center;
   font-size: 60px;
   line-height: 75px;
+  box-sizing: border-box;
 }
 .topics-list {
-  width: 400px;
+  width: 410px;
   margin: 0 20px;
   list-style: none;
   border: 4px #004b81 solid;
   padding: 0;
   background-color: gainsboro;
   float: left;
+  box-sizing: border-box;
 }
 .topics-list li {
   background-color: #0069b4;

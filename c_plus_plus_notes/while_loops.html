@@ -57,40 +57,72 @@
 
         <div class="main-content">
 
-            <h2>If Statements</h2>
+            <h2>While Loops</h2>
 
-            <p>A general if statement is structured as follows</p>
+            <p>A while loop lets us repeat sections of our code based on a defined expression</p>
             <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
-                  if ( expression ) {
-                    //... do something;
-                  }
+                while( [expression] ) {
+                    // Code to be repeated
+                 }
             ]]></script>
 
-            <p>We can add an else statement like this</p>
+            <p>Example of how to use a while loop to increase a value</p>
             <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
-                  if ( expression ) {
-                    //... do something;
-                  } else ( expression ) {
-                    //.. do something else;
-                  }
+                int count = 0;
+
+                while( count < 10 ) {
+                    cout<<"Current count value: "<<count<<endl;
+                    count = count+1;
+                }
+
+                cout<<"Final count value: "<<count<<endl;
             ]]></script>
 
-            <p>We can also chain an else statement with multiple ifs and else ifs like this: </p>
+            <p>We can also use a while loop to total values together<br />
+            Perhaps add all values between 10 to 20</p>
             <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
-                  if ( expression ) {
-                    //... do something;
-                  } else if( expression ) {
-                    //... do something else;
-                  } else if( expression ) {
-                    //... do something else;
-                  } else {
-                    //... if all else fails do this;
-                  }
+                int total = 0;
+                int current_value = 10
+
+                while( value <= 20 ) {
+                    total = total + current_value;
+                    current_value = current_value + 1;
+                }
+
+                cout<<"Total value: "<<total<<endl;
             ]]></script>
+
+            <p>This is a good time to explain a nifty shortcut. Whenever we have been updating a value based on itself we have been doing things like this: </p>
+            <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
+                total = total + 1;
+                // and
+                total = total + 5;
+            ]]></script>
+
+            <p>We can actually code it this way instead: </p>
+            <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
+                total++; // Adds 1 to the value of total - Huh interestingly this resembles the title of "c++"
+                 // Or if we want to add a value
+                 total += 5 // Adds 5 to the value of total
+            ]]></script>
+
+            <p>This neat trick not only works with addition though, we can do it with other operators</p>
+            <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
+                int value = 10;
+
+                value += 8;
+                value -= 3;
+                value *= 4;
+                value /= 2;
+                value %= 20;
+                //What do you think the final value is?
+                cout<<"Final Value: "<<value<<endl;
+            ]]></script>
+
 
         </div>
         <div id="footer">
-
+            &nbsp;
         </div><!-- End #footer -->
 
         <script>console.log("Footer is showing")</script>
