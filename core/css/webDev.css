@@ -144,7 +144,7 @@ body {
   background-color: #04577b;
 }
 .mother {
-  width: 1170px;
+  width: 1400px;
   margin: 0 auto;
   background-color: lightcyan;
 }
@@ -183,7 +183,7 @@ body {
 }
 .topic-title {
   float: right;
-  width: 700px;
+  width: 930px;
   border: 4px #004b81 solid;
   color: #0069b4;
   margin-right: 20px;
@@ -221,8 +221,19 @@ body {
 }
 .main-content {
   float: right;
-  width: 700px;
+  width: 930px;
   margin: 10px 20px 0 0;
+  font-size: 22px;
+}
+.main-content h2 {
+  font-size: 36px;
+}
+.main-content h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.main-content p {
+  font-size: 22px;
 }
 #footer {
   clear: both;

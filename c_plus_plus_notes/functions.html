@@ -59,8 +59,68 @@
 
             <h2>Functions</h2>
 
+            <p>While our code is being executed each line is usually read one at at time from top to bottom of our file each step one at a time.<br />
+                <br />
+                If we want to reuse a piece of code we could copy and paste it into our new section; however, this is not ideal for a couple of reasons which I will get into later<br />
+                <br />
+                There are a couple of ways we can reuse code - one way we have talked about already is in the form of loops. Imagine if we did not have this capability! We would have to copy and paste the same code however many times we wanted an action to happen. Infinite input would be impossible and the frustration is over 9000 if we had a typo in a section that was copied many times!<br />
+                <br/>
+                But what if we want have a piece of code that we use in many places but not in a consecutive fashion. Say I have some code that converts F to C or maybe a US state name to its associated abbreviation. It would be silly to have to copy and paste this method every time we want to use it: ENTER FUNCTIONS!!!<br />
+                </p>
+
+            <p> A function follows this form</p>
             <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
-                //TO BE DONE
+                [return type] [name-of-function]([parameters]){
+                    //Local Vars of function (These are not always needed)
+
+                    //Code our function does
+
+                    //return [value to be returned]
+                }
+            ]]></script>
+
+            <p> Lets look at an example for converting F to C </p>
+            <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
+                int celsius_to_fahrenheit(int degreesC){
+                    int degreesF = (degreesC *1.8) + 32;
+
+                    return degreesF
+                }
+            ]]></script>
+
+            <p>So in our example above our function named celsius_to_fahrenheit actually makes use of two variables </p>
+            <ul>
+                <li>degreesF</li>
+                <li>degreesC</li>
+            </ul>
+
+            <p>Now we initially set our degreesF with our nifty Celsius equation; but where does the degreesC value come from? We are not setting it anywhere!</p>
+
+            <p>degreesC is actually set when we <strong>call the function</strong>. The code we put in this function won't ever be run unless we tell our main function to run it somehow. This is the second step in writing a function and looks like this:</p>
+            <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
+                calculatedTemp = celsius_to_fahrenheit(tempToChange);
+            ]]></script>
+
+            <p>So in totality our code would look like this.</p>
+            <script type="text/syntaxhighlighter" class="brush: c++"><![CDATA[
+                int main() {
+                    int tempToChange = 789;
+                    int calculatedTemp;
+
+                    /****** THIS LINE HERE IS THE FUNCTION CALL ******/
+                    calculatedTemp = celsius_to_fahrenheit(tempToChange);
+                    /*************************************************/
+
+                    cout<<tempToChange<<" in Celsius is "<<calculatedTemp<<" in Fahrenheit<<endl;
+                }
+
+                int celsius_to_fahrenheit(int degreesC){
+                    int degreesF;
+
+                    degreesF = (degreesC *1.8) + 32;
+
+                    return degreesF
+                }
             ]]></script>
 
         </div>
